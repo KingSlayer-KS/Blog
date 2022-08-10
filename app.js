@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose=require("mongoose")
 const ejs = require("ejs");
+const favicon = require('serve-favicon');
 const _ = require("lodash");
 
 const homeStartingContent = "Hi there Sirjan this side, Welcome to my Blog section I post about random stuff that I like";
