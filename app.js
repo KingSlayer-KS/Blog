@@ -13,6 +13,8 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+
 
 mongoose.connect("mongodb+srv://Sirjan:Sirjan@demo.eekxi.mongodb.net/postDB")
 //Schema
