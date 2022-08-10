@@ -4,7 +4,7 @@ const mongoose=require("mongoose")
 const ejs = require("ejs");
 const _ = require("lodash");
 
-const homeStartingContent = "Hi there Sirjan this side, Welsome to my Blog section I post about random stuff that I like";
+const homeStartingContent = "Hi there Sirjan this side, Welcome to my Blog section I post about random stuff that I like";
 const contactContent = "Use provided links to contact me";
 
 const app = express();
