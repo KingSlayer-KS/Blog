@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose=require("mongoose")
 const ejs = require("ejs");
-const favicon = require('serve-favicon');
+const favicon = require("serve-favicon");
 const _ = require("lodash");
 
 const homeStartingContent = "Hi there Sirjan this side, Welcome to my Blog section I post about random stuff that I like";
@@ -14,7 +14,7 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
-app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(favicon('favicon.ico'));
 
 
 mongoose.connect("mongodb+srv://Sirjan:Sirjan@demo.eekxi.mongodb.net/postDB")
